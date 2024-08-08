@@ -392,3 +392,93 @@ footer p{
         height: auto;
     }
 }
+
+/* Modo Escuro */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+
+    nav {
+        background-color: #1f1f1f;
+    }
+
+    nav .logo a {
+        color: #ffffff;
+    }
+
+    nav .nav-links a {
+        color: #e0e0e0;
+    }
+
+    nav .nav-links a:hover,
+    nav .nav-links a.selected {
+        color: #bb86fc;
+    }
+
+    .main .info h1 {
+        color: #ffffff;
+    }
+
+    .main .info p {
+        color: #e0e0e0;
+    }
+
+    .main .info button {
+        background: #bb86fc;
+        color: #121212;
+    }
+
+    .main .info button:hover {
+        background: #3700b3;
+    }
+
+    footer {
+        background-color: #1f1f1f;
+    }
+
+    footer .socials i:hover {
+        color: #bb86fc;
+    }
+
+    footer p {
+        color: #e0e0e0;
+    }
+
+    .content .container {
+        background-color: #1f1f1f;
+    }
+
+    .content .container h2 {
+        color: #ffffff;
+    }
+
+    .content .container .about>p {
+        color: #e0e0e0;
+    }
+
+    .page-title {
+        color: #e0e0e0;
+    }
+
+    .works-list .item {
+        border-bottom: 2px solid #333333;
+    }
+
+    .works-list .item h3 {
+        color: #ffffff;
+    }
+
+    .works-list .item .details .item-info .year-badge {
+        background-color: #bb86fc;
+    }
+
+    .works-list .item .details .item-info h4 {
+        color: #bbbbbb;
+    }
+
+    .works-list .item .details p {
+        color: #e0e0e0;
+    }
+}
