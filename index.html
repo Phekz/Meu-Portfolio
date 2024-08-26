@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,11 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <title>Meu Portfolio</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
 <body>
@@ -17,20 +22,99 @@
             <p>Phekz</p>
         </div>
         <div class="nav-links">
-            <a class="selected" href="index.html">Home</a>
-            <a href="works.html">Projetos</a>
-            <a href="about.html">Sobre</a>
+            <a class="selected" href="#home">Home</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#sobre">Sobre</a>
         </div>
     </nav>
 
-    <div class="main">
+    <section id="home" class="main">
         <div class="info">
             <h1>Olá, eu sou o Phelipe, <br>Desenvolvedor Full Stack</h1>
             <p>Olá! Sou Phelipe Quintes, um desenvolvedor full stack com uma paixão por criar soluções digitais completas e eficientes. Atualmente cursando o 5° semestre em Ciência da Computação e com uma experiência sólida em suporte técnico, especializei-me em desenvolver tanto o front-end quanto o back-end de aplicações, unindo estética e funcionalidade. Minha habilidade em trabalhar com tecnologias modernas e meu compromisso com a qualidade garantem que os projetos que realizo não apenas atendem, mas superam as expectativas dos usuários e clientes. Vamos construir algo incrível juntos?!</p>
             <a href="doc/Curriculum Agosto 2024 2.0.pdf" download><button>Baixar Currículo</button></a>
         </div>
         <img src="imagens/Profile_1.jpg">
-    </div>
+    </section>
+
+    <section id="projetos">
+        <h1 class="page-title">Projetos</h1>
+
+        <div class="content">
+            <div class="works-list">
+                <div class="item">
+                    <a href="https://github.com/Phekz/File-Sharing" target="_blank"><img src="imagens/projeto_1.png"></a>
+                    <div class="details">
+                        <h3>File Sharing</h3>
+                        <div class="item-info">
+                            <div class="year-badge">2024</div>
+                            <h4>Css</h4>
+                        </div>
+                        <p>Plataforma De Compartilhamento De Arquivos.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="https://github.com/Phekz/TradingView" target="_blank"><img src="imagens/projeto_2.png"></a>
+                    <div class="details">
+                        <h3>Trading View</h3>
+                        <div class="item-info">
+                            <div class="year-badge">2024</div>
+                            <h4>JavaScript</h4>
+                        </div>
+                        <p>Plataforma que acompanha em tempo real criptomoedas.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="https://github.com/Phekz/ChatGPT" target="_blank"><img src="imagens/Projeto_3.png"></a>
+                    <div class="details">
+                        <h3>ChatGPT</h3>
+                        <div class="item-info">
+                            <div class="year-badge">2024</div>
+                            <h4>JavaScript</h4>
+                        </div>
+                        <p>Desenvolvi um protótipo de ChatGPT usando a própria API dele.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="https://github.com/Phekz/Catalogo_De_Filme" target="_blank"><img src="imagens/projeto_4.png"></a>
+                    <div class="details">
+                        <h3>Catálogo De Filmes</h3>
+                        <div class="item-info">
+                            <div class="year-badge">2024</div>
+                            <h4>JavaScript</h4>
+                        </div>
+                        <p>Plataforma de filmes online.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <a href="https://github.com/Phekz/Admin-Dashboard" target="_blank"><img src="imagens/Screenshot Admindashboard.png"></a>
+                    <div class="details">
+                        <h3>Admin Dashboard</h3>
+                        <div class="item-info">
+                            <div class="year-badge">2024</div>
+                            <h4>HTML/CSS/JS</h4>
+                        </div>
+                        <p>Desenvolvi o Front de um Dashboard.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <h1 class="page-title">Sobre</h1>
+
+        <div class="content">
+            <div class="container">
+                <img src="imagens/Profile_1.jpg">
+                <div class="about">
+                    <h2>Phelipe Quintes</h2>
+                    <p>Eu me chamo Luis Phelipe Paes Quintes, tenho 23 anos.<br>Atualmente estou cursando Ciência Da Computação e estou no 5° Semestre.<br>Busco novos caminhos para poder alavancar a minha carreira como desenvolvedor.</p>
+                    <p class="email">Entre em contato comigo: Phellipequintes@hotmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <div class="socials">
@@ -40,11 +124,15 @@
             <a href="https://www.linkedin.com/in/phelipe-quintes-96a300187/" target="_blank"><i class='bx bxl-linkedin-square'></i></a>
         </div>
         <p>Copyright ©2024, All rights reserved.</p>
+        <button onclick="scrollToTop()" class="scroll-top-btn">Home</button>
     </footer>
 
+    <script>
+        function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+    </script>
 
-    
-
-    
 </body>
+
 </html>
